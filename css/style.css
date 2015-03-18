@@ -1,0 +1,367 @@
+html {
+    display: table;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    line-height: 16px;
+}
+
+body {
+
+    color: #6c6c6c !important;
+    background: #c9b7a2;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f2e3d2), to(#c9b7a2));
+    background: -webkit-linear-gradient(top, #f2e3d2, #c9b7a2);
+    background: -moz-linear-gradient(top, #f2e3d2, #c9b7a2);
+    background: -ms-linear-gradient(top, #f2e3d2, #c9b7a2);
+    background: -o-linear-gradient(top, #f2e3d2, #c9b7a2);
+    background-image: -ms-linear-gradient(top, #f2e3d2 0%, #c9b7a2 100%);
+    background-repeat: no-repeat;
+}
+
+a {
+    color: #507c0c !important;
+}
+
+.is-Table {
+    display: table;
+    height: 100%
+}
+
+.is-Table .Table-Cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#wrapper {
+    padding-bottom: 2%;
+}
+
+#main {
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 0 8px 8px;
+    -moz-border-radius-bottomright: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+}
+
+
+#main:before, #main:after {
+    content: "";
+    position: absolute;
+    z-index: -2;
+}
+
+#wrapper header {
+    margin-bottom: 0;
+    margin-top: 1%;
+    padding: 0;
+}
+
+#logo {
+    padding-bottom: 15px;
+}
+
+#logo img {
+    width: 100%;
+}
+
+#author {
+    color: #725129;
+    padding-top: 10%;
+}
+
+#author em {
+    padding-right: 2%;
+}
+
+
+#author a {
+    display: inline-block;
+    border-left: 1px solid #447314;
+    padding-left: 2%
+}
+
+#wrapper header ul li a {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#wrapper header ul li:first-child a {border-radius: 8px 0 0 0;
+    -moz-border-radius-topleft: 8px;
+    -webkit-border-top-left-radius: 8px;}
+
+#wrapper header ul li:last-child a {border-radius: 0 8px 0 0;
+    -moz-border-radius-topright: 8px;
+    -webkit-border-top-right-radius: 8px;}
+
+#wrapper header ul li a.active1 {
+    background-color: rgb(252, 252, 252);
+
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    color: #725129 !important;
+}
+
+#wrapper header ul li a.active1:before, #wrapper header ul li a.active1:after {
+    content: "";
+    position: absolute;
+    z-index: -2;
+}
+
+#wrapper header ul li a.disable {
+    background: transparent;
+
+    box-shadow: 0 -2px 4px rgba(242, 227, 210, 0.67), 0 0 20px rgba(201, 183, 162, 0.56) inset;
+    color: rgba(114, 81, 41, 0.53) !important;
+}
+
+#wrapper header ul li a.disable:hover {
+    box-shadow: 0 -2px 4px rgba(242, 227, 210, 0.67), 0 0 50px rgba(201, 183, 162, 0.56) inset;
+    background: transparent;
+    color: #725129 !important;
+
+}
+
+#wrapper header ul {
+    padding-right: 15px !important;
+    padding-left: 15px;
+}
+
+#wrapper header ul li {
+    width: 50%;
+}
+
+#main {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#main #myTab li a {
+    color: #6c6c6c;
+    margin-right: 0;
+}
+
+#main #myTab li.active {
+    font-weight: bold;
+}
+
+#tasks h4, #newTask h4 {
+    text-align: center;
+}
+
+.form-control:focus {
+    border-color: transparent !important;
+    -webkit-box-shadow: inset 0 1px 5px 0 rgba(49, 84, 12, 0.60) !important;
+    box-shadow: inset 0 1px 5px 0 rgba(49, 84, 12, 0.60) !important;
+}
+
+/*new task*/
+#newTask form {
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 2%
+}
+
+#implementerDate, #files {
+    float: none;
+    margin-bottom: 15px;
+}
+
+#implementerName {margin-right: 2%;}
+
+#implementerName, #calendar {
+    display: inline-block !important;
+}
+
+.button {
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+#quickAction .button {text-align: center;}
+
+#files input {
+    display: inline-block;
+}
+
+.submit-button {
+    border: 1px solid #447314 !important;
+    background: #488135 !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#78ab56), to(#395d0c)) !important;
+    background: -webkit-linear-gradient(top, #78ab56, #395d0c) !important;
+    background: -moz-linear-gradient(top, #78ab56, #395d0c) !important;
+    background: -ms-linear-gradient(top, #78ab56, #395d0c) !important;
+    background: -o-linear-gradient(top, #78ab56, #395d0c) !important;
+    background-image: -ms-linear-gradient(top, #8dc059 0%, #395d0c 100%) !important;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    border-radius: 4px !important;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0 !important;
+    -moz-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0 !important;
+    box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0 !important;
+    color: rgb(231, 255, 221) !important;
+    padding: 8.5px 18px !important;
+    text-decoration: none !important;
+    vertical-align: middle !important;
+
+}
+
+.button {
+    margin-bottom: 0 !important;
+}
+
+.submit-button:hover {
+    border: 1px solid #447314 !important;
+    text-shadow: #31540c 0 1px 0 !important;
+    background: #6aa436 !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#8dc059), to(#6aa436)) !important;
+    background: -webkit-linear-gradient(top, #8dc059, #6aa436) !important;
+    background: -moz-linear-gradient(top, #8dc059, #6aa436) !important;
+    background: -ms-linear-gradient(top, #8dc059, #6aa436) !important;
+    background: -o-linear-gradient(top, #8dc059, #6aa436) !important;
+    background-image: -ms-linear-gradient(top, #8dc059 0%, #6aa436 100%) !important;
+    color: #fff !important;
+}
+
+.submit-button:active {
+    text-shadow: #31540c 0 1px 0 !important;
+    border: 1px solid #447314 !important;
+    background: #8dc059 !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#6aa436), to(#8dc059)) !important;
+    background: -webkit-linear-gradient(top, #6aa436, #8dc059) !important;
+    background: -moz-linear-gradient(top, #6aa436, #8dc059) !important;
+    background: -ms-linear-gradient(top, #6aa436, #8dc059) !important;
+    background: -o-linear-gradient(top, #6aa436, #8dc059) !important;
+    background-image: -ms-linear-gradient(top, #6aa436 0%, #8dc059 100%) !important;
+    color: #fff;
+}
+
+
+.return-button {
+    border: 1px solid #a60003 !important;
+    background: #b80003 !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff0003), to(#b80003)) !important;
+    background: -webkit-linear-gradient(top, #ff0003, #b80003) !important;
+    background: -moz-linear-gradient(top, #ff0003, #b80003) !important;
+    background: -ms-linear-gradient(top, #ff0003, #b80003) !important;
+    background: -o-linear-gradient(top, #ff0003, #b80003) !important;
+    background-image: -ms-linear-gradient(top, #ff0003 0%, #b80003 100%) !important;
+    color: #fff !important;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    border-radius: 4px !important;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0 !important;
+    -moz-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0 !important;
+    box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0 !important;
+
+    padding: 8.5px 18px !important;
+    text-decoration: none !important;
+    vertical-align: middle !important;
+
+}
+
+.return-button:hover {
+    border: 1px solid #ce0003 !important;
+    background: #e30003 !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff0003), to(#e30003)) !important;
+    background: -webkit-linear-gradient(top, #ff0003, #e30003) !important;
+    background: -moz-linear-gradient(top, #ff0003, #e30003) !important;
+    background: -ms-linear-gradient(top, #ff0003, #e30003) !important;
+    background: -o-linear-gradient(top, #ff0003, #e30003) !important;
+    background-image: -ms-linear-gradient(top, #ff0003 0%, #e30003 100%) !important;
+    color: rgb(255, 243, 238) !important;
+}
+
+.return-button:active {
+    border: 1px solid #ce0003 !important;
+    background: #ff0003 !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e30003), to(#ff0003)) !important;
+    background: -webkit-linear-gradient(top, #e30003, #ff0003) !important;
+    background: -moz-linear-gradient(top, #e30003, #ff0003) !important;
+    background: -ms-linear-gradient(top, #e30003, #ff0003) !important;
+    background: -o-linear-gradient(top, #e30003, #ff0003) !important;
+    background-image: -ms-linear-gradient(top, #e30003 100%, #ff0003 0%) !important;
+    color: rgb(255, 243, 238) !important;
+}
+
+/*tasks*/
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: rgba(203, 255, 150, 0.39) !important;
+}
+
+.alarm td:first-child {
+    background: url("../pics/alarm.png") no-repeat 2px 8px; background-size: 85%;
+}
+
+.alarm td:last-child {
+    color: #d00003;
+}
+
+.attention td:first-child {
+    background: url("../pics/attention.png") no-repeat 2px 8px; background-size: 85%;
+}
+
+#taskFiltre div {
+    text-align: right;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#taskFiltre button, #quickAction button {margin-top: 3%;}
+
+ul.pagination li a:hover {
+    background-color: rgba(203, 255, 150, 0.39) !important;
+}
+
+ul.pagination li.active a {
+    color: #ffffff !important;
+    background-color: #6aa436 !important;
+    border: 0;
+}
+
+option:hover {background: #ccc;}
+
+/*task description*/
+
+#fileInsert li {padding-right: 2%; border-right: 1px solid #447314;
+    padding-left: 2%;}
+
+#fileInsert li:last-child {border: none;}
+
+fieldset legend {font-size: inherit; margin-bottom: 0;}
+
+#taskStatus div table tr th {background-color: rgba(203, 255, 150, 0.39)}
+
+#quickAction  form {margin-top: -9px !important;}
+
+#quickAction button {display: block; width: 100%;}
+
+#taskStatus div table tr td ul {list-style: none; padding-left: 0;}
+
+#commentChat {border-top: 1px dashed rgba(68, 115, 20, 0.20)
+}
+
+.commentLine {border: 1px solid #c0c0c0; margin-bottom: 1px;}
+
+#comment form  {margin-top: 3.5%;}
+
+
+
+

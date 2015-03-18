@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Done</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style2.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+    <script type="text/javascript" src="http://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">$('#myTab a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show')
+    })</script>
+    <script type="text/javascript" src="js/tinymce/tinymce.min.js"></script>
+    <script type="text/javascript">
+        tinymce.init({
+            selector: "textarea"
+        });
+    </script>
+</head>
+<body>
+<div id="wrapper" class="container is-Table">
+    <div class="Table-Cell">
+        <div class="Center-Block">
+            <header class="container">
+                <div class="row">
+                    <div id="logo" class="col-lg-3 col-md-3 col-xs-3">
+                        <img src="pics/logo.png">
+                    </div>
+                    <div id="author" class="col-lg-9 col-md-9 col-xs-9 text-right"><span>Здравствуйте, </span><em>Иван
+                        Иванов </em><a
+                            href="#">выйти</a>
+                    </div>
+                </div>
+
+                <nav class="row" role="navigation">
+
+                    <ul class="nav navbar-nav nav-justified">
+                        <li><a class="active1" href="#">Постановщик</a></li>
+                        <li><a class="disable" href="#">Исполнитель</a></li>
+                    </ul>
+
+                </nav>
+            </header>
+            <div id="main" class="container">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" id="myTab">
+                    <li><a href="#tasks" data-toggle="tab">Задачи</a></li>
+                    <li class="active"><a href="#newTask" data-toggle="tab">Новая задача</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane" id="tasks">
+                        <!--<h3>Задачи</h3>-->
+
+                        <div class="row">
+                            <div class="col-lg-8 col-md-8 col-xs-8" id="taskTable">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered">
+                                        <caption>Поставленные мною задачи. Нажмите на нужную задачу, чтобы произвести с
+                                            нею
+                                            действие
+                                        </caption>
+                                        <tr>
+                                            <th>&nbsp</th>
+                                            <th>Исполнитель</th>
+                                            <th>Задача</th>
+                                            <th>Срок</th>
+                                            <th>Статус</th>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp</td>
+                                            <td>Петров Петр</td>
+                                            <td>Настройка роутера на объекте</td>
+                                            <td>12.03.2015</td>
+                                            <td>В процессе</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp</td>
+                                            <td>Марьина Мария</td>
+                                            <td>Заключение договора с заказчиком</td>
+                                            <td>12.04.2015</td>
+                                            <td>В процессе</td>
+                                        </tr>
+                                        <tr class="alarm">
+                                            <td>&nbsp</td>
+                                            <td>Марьина Мария</td>
+                                            <td>Заключение договора с заказчиком</td>
+                                            <td>12.04.2015</td>
+                                            <td>Просрочено</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp</td>
+                                            <td>Марьина Мария</td>
+                                            <td>Заключение договора с заказчиком</td>
+                                            <td>12.04.2015</td>
+                                            <td>В процессе</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp</td>
+                                            <td>Марьина Мария</td>
+                                            <td>Заключение договора с заказчиком</td>
+                                            <td>12.04.2015</td>
+                                            <td>Исполнено</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp</td>
+                                            <td>Марьина Мария</td>
+                                            <td>Заключение договора с заказчиком</td>
+                                            <td>12.04.2015</td>
+                                            <td>В процессе</td>
+                                        </tr>
+                                        <tr class="attention">
+                                            <td>&nbsp</td>
+                                            <td>Семенов Семен</td>
+                                            <td>Закупка оргтехники</td>
+                                            <td>12.01.2015</td>
+                                            <td>Ждет Вашего ответа</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4" id="taskFiltre">
+                                <div><span>Экспорт задач в </span><a href="#">Excel</a></div>
+                                <form role="form">
+                                    <fieldset>
+                                        <legend>Фильтр задач</legend>
+                                        <div class="form-group">
+                                            <label for="implementerSel"
+                                                   class="col-lg-4 col-md-4 col-xs-4 control-label">Исполнитель</label>
+
+                                            <div class="col-lg-8 col-md-8 col-xs-8"><select class="form-control"
+                                                                                            id="implementerSel">
+                                                <option>Все</option>
+                                                <option>Петров Петр</option>
+                                                <option>Марьина Мария</option>
+                                                <option>Семенов Семен</option>
+                                            </select></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="status"
+                                                   class="col-lg-4 col-md-4 col-xs-4 control-label">Статус</label>
+
+                                            <div class="col-lg-8 col-md-8 col-xs-8">
+                                                <select class="form-control" id="status">
+                                                    <option>Все</option>
+                                                    <option>В процессе</option>
+                                                    <option>Исполнено</option>
+                                                    <option>Просрочено</option>
+                                                    <option>Ждет Вашего ответа</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="from" class="col-lg-4 col-md-4 col-xs-4 control-label">С</label>
+
+                                            <div class="col-lg-8 col-md-8 col-xs-8">
+                                                <input class="form-control" id="from" type="date">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="to" class="col-lg-4 col-md-4 col-xs-4 control-label">По</label>
+
+                                            <div class="col-lg-8 col-md-8 col-xs-8">
+                                                <input class="form-control" id="to" type="date">
+                                            </div>
+                                        </div>
+                                        <div class="button">
+                                            <div class="form-group">
+                                                <button type="button" class="btn-md submit-button">Показать</button>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                                <ul class="pagination">
+                                    <li><a href="#">&laquo;</a></li>
+                                    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">&raquo;</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane active" id="newTask">
+                        <!--  <h3>Новая задача</h3>-->
+
+                        <form role="form">
+                            <div class="form-horizontal">
+                                <div class="form-group row">
+                                    <label for="nameTask"
+                                           class="col-sm-2 col-lg-2 col-md-2 control-label">Название</label>
+
+                                    <div class="col-sm-10 col-lg-10 col-md-10"><input id="nameTask" type="text"
+                                                                                      mname="name"
+                                                                                      class="form-control"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="task" class="sr-only">Задание</label><textarea
+                                    placeholder="Введите текст комментария" rows="5" class="form-control"
+                                    id="task"></textarea></div>
+                            <div class="form-inline" id="implementerDate">
+                                   <div class="form-group" id="implementerName">
+                                       <label for="implementer">Исполнитель</label>
+
+                                       <select id="implementer" name="implementer" class="form-control" #>
+                                               <option disabled selected="selected">Выберите исполнителя</option>
+                                               <option>Чебурашка</option>
+                                               <option>Крокодил Гена</option>
+                                               <option>Шапокляк</option>
+                                               <option>Крыса Лариса</option>
+                                           </select>
+                                   </div>
+                                   <div class="form-group" id="calendar">
+                                       <label for="date">к дате</label>
+                                       <input id="date" type="date" name="calendar" class="form-control">
+
+                                   </div>
+                               </div>
+                            <div class="form-inline" id="files">
+                                <div class="form-group">
+                                    <label for="file">Приложить файлы</label> <input type="file" id="file">
+                                </div>
+                            </div>
+
+                            <div class="button form-inline">
+                                <div class="form-group">
+                                    <button type="button" class="btn-md submit-button">Создать задачу</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
